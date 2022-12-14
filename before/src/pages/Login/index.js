@@ -1,8 +1,14 @@
+import { Card } from 'antd'
+import './index.scss'
+
 function Login() {
     return (
-        <div>
-            login
-        </div>
+        <>
+            <Card title="登录" className='login'>
+                <p>用户名</p>
+                <p>密码</p>
+            </Card>
+        </>
     )
 }
 
