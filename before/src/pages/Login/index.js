@@ -2,6 +2,12 @@ import { Card, Form, Input, Button, Checkbox } from 'antd'
 import './index.scss'
 
 function Login() {
+
+    function onFinish(values) {
+        console.log(values);
+        console.log("操作成功");
+    }
+
     return (
         <>
             <div className='login_div'>
@@ -18,7 +24,7 @@ function Login() {
                             remember: true,
 
                         }}
-                        // onFinish={onFinish}
+                        onFinish={onFinish}
                         //onFinishFailed={onFinishFailed}
                         autoComplete="off"
                     >
@@ -56,7 +62,7 @@ function Login() {
                                 span: 16,
                             }}
                         >
-                            <Checkbox>记住当前登录信息</Checkbox>
+                            <Checkbox>我已阅读并同意[用户协议]和[隐私条款]</Checkbox>
                         </Form.Item>
 
                         <Form.Item
@@ -66,7 +72,7 @@ function Login() {
                             }}
                         >
                             <Button type="primary" htmlType="submit">
-                                Submit
+                                提交
                             </Button>
                         </Form.Item>
                     </Form>

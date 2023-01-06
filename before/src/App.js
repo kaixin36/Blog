@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login';
 import Layout from './pages/Layout';
@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Routes>
+       <Routes> 
           <Route path='/' element={<Layout></Layout>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
         </Routes>
