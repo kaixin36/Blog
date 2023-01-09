@@ -34,7 +34,7 @@ function Login() {
                             rules={[
                                 {
                                     required: true,
-                                    message: '请输入用户名!',
+                                    message: '必输项!',
                                 },
                             ]}
                         >
@@ -47,7 +47,7 @@ function Login() {
                             rules={[
                                 {
                                     required: true,
-                                    message: '请输入密码!',
+                                    message: '必输项!',
                                 },
                             ]}
                         >

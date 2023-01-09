@@ -11,6 +11,7 @@ class LoginStore {
         //调入登录接口
         await http.post("", {})
         //存入token
+        token = "token"
     }
 
 }
