@@ -1,11 +1,15 @@
+import { useNavigate } from 'react-router-dom';
+
 import { Card, Form, Input, Button, Checkbox } from 'antd'
 import './index.scss'
 
 function Login() {
+    const navigate = useNavigate("");
 
     function onFinish(values) {
         console.log(values);
         console.log("操作成功");
+        navigate("/");
     }
 
     return (
